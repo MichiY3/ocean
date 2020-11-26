@@ -4,8 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../ocean.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
+
+<script src="style.js"></script>   
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../ocean.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css">
     
+    <title>Ocean</title>
+</head>
+<body>
+    <header>
+        
+        <!-- hamburger -->
+        <div class="container">
+            <div class="hamburger-menu">
+                <div class="hamburger-menu-line line-top"></div>
+                <div class="hamburger-menu-line line-middle"></div> 
+                <div class="hamburger-menu-line line-bottom"></div>
+        </div>
+
+        <section>
+          
+            <h2 class="top">
+                   <img src="img/main.jpeg">
+            </h2>
+        </section>
+    </header>
+
+    <article>
+        <h2 class="toptitle">
+            cafe OCEAN<br>
+        </h2>
+            沖縄市の<br>
+            ビールの美味い<br>
+            タコス屋さん<br>
+            
+    </article>
+
+
+      
+    <!-- スライダー -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/tacos.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/sandwich.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/tacorice.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/tuna.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/yakimesi.jpg">
+          </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+    <!--  店情報-->
+    <article id="access">
+        <h3>ACCESS</h3>
+        <p>cafe OCEANへのアクセス</p>
+        <section id="mapBox">
+          <section class="gMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14302.66680226203!2d127.7969228!3d26.33729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c5653fe72f9dfa4!2scafe%20OCEAN!5e0!3m2!1sja!2sjp!4v1606356787857!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section><!--gMap-->
+            
+          <table>
+            <tbody>
+              <tr>
+                <th>address</th>
+                <td><span class="post">〒904-0004 </span> <br class="tabSPhone">沖縄県沖縄市中央２丁目１５−２ 
+              </tr>
+              <tr>
+                <th>time</th>
+                <td>12時00分～0時00分</td>
+              </tr>
+              <tr>
+                <th>tel</th>
+                <td>098 - 938 - 5978</td>
+              </tr>
+            </tbody>
+          </table>
+        </section><!--mapBox-->
+        <hr class="clear">
+      </article>
+
+      <!-- video -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0wrQfTtdQM4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--footer  -->
+    <section id="hireme" class="section hireme">
+        <div class="container">
+          <div class="col-md-8 offset-md-2 text-center">
+           <h3>お問い合わせ</h3>
+              <p></p>
+              <a href="#" class="btn btn-large">H I R E     M E</a> 
+          </div>
+        </div>    
+      </section>
+      
+    <footer>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="col-md-12">
+              <p></p>
+                  <ul class="footer-share">
+                    <li><a href="#"><i class="fab fa-facebook" style="color: black"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="color: black"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in" style="color: black"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus" style="color: black"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest" style="color: black"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vimeo-v" style="color: black"></i></a></li>
+                  </ul>
+              <p></p>
+            <div class="copyright">© 2020 <i class="fas fa-heart" style="color:blue"></i> by　NexSeedOkinawa</div>
+          </div>
+       </div>
+      </footer>
+      <!-- JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="./js2/sample.js"></script>
+      <!-- slider -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+      <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          loop: true,
+          slidesPerView: 2,
+            spaceBetween: 10,
+            centeredSlides : true,
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev'
+        })       
+      </script>
+
 </body>
 </html>
