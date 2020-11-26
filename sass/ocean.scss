@@ -1,15 +1,15 @@
-/* header */
-.top img{
-  width: 100%;
+*{
+  color: #043c78;
 }
 
+/* header */
 
 /* hamburger*/
 :root {
-  --hamburger-menu-size: 100px; /* メニューの大きさ */ 
-  --hamburger-menu-padding: 12px;  
-  --hamburger-menu-border-px: 6px; /* 線の太さ */
-  --hamburger-menu-border-color: #342534; /* 線の色 */
+  --hamburger-menu-size: 80px; /* メニューの大きさ */ 
+  --hamburger-menu-padding: 10px;  
+  --hamburger-menu-border-px: 15px; /* 線の太さ */
+  // --hamburger-menu-border-color: #043c78; /* 線の色 */
   --hamburger-menu-transition: 0.3s; /* アニメーション秒数 */
 }
 
@@ -35,16 +35,19 @@
 .line-top {
   top: var(--hamburger-menu-padding);
   left: var(--hamburger-menu-padding);
+  --hamburger-menu-border-color: #f0cb53; /* 線の色 */
 }
 
 .line-middle {
   top: calc(50% - var(--hamburger-menu-border-px)/2);
   left: var(--hamburger-menu-padding);
+  --hamburger-menu-border-color: #f32a07; /* 線の色 */
 }
 
 .line-bottom {
   bottom: var(--hamburger-menu-padding);
   left: var(--hamburger-menu-padding);
+  --hamburger-menu-border-color: #f0cb53; /* 線の色 */
 }
 
 
@@ -65,10 +68,15 @@
 }
 
 // headの写真スライド
+h2 .top{
+  border:none;
+
+}
 #slideshow {
   position: relative;
-  width:  100%; /* 画像の横幅に合わせて記述 */
-  height: 800px; /* 画像の高さに合わせて記述 */
+  display:block;
+  width:  100vh; /* 画像の横幅に合わせて記述 */
+  height: 100%; /* 画像の高さに合わせて記述 */
 }
 #slideshow img {
   position: absolute;
@@ -76,6 +84,8 @@
   left:0;
   z-index: 8;
   opacity: 0.0;
+  background-size: cover;
+
 }
 #slideshow img.active {
   z-index: 10;
@@ -85,7 +95,9 @@
   z-index: 9;
 }
 
-
+.intro{
+  margin-left:50px;
+}
 
 
 /* slider */
