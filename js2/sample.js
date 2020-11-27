@@ -5,6 +5,8 @@ $(function(){
   })
 })
 
+
+
 // headの写真スライド
 function slideSwitch() {
   var $active = $('#slideshow img.active');
