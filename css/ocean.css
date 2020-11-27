@@ -6,7 +6,7 @@
 /* header */
 /* hamburger*/
 :root {
-  --hamburger-menu-size: 80px;
+  --hamburger-menu-size: 60px;
   /* メニューの大きさ */
   --hamburger-menu-padding: 10px;
   --hamburger-menu-border-px: 15px;
@@ -68,7 +68,7 @@
   transform: rotate(-45deg);
 }
 
-h2 .top {
+.toptitle, h2 .top {
   border: none;
 }
 
@@ -101,6 +101,11 @@ h2 .top {
 
 .intro {
   margin-left: 50px;
+}
+
+.intro .img {
+  background-size: 30px;
+  rotate: -75;
 }
 
 /* slider */

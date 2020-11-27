@@ -6,7 +6,7 @@
 
 /* hamburger*/
 :root {
-  --hamburger-menu-size: 80px; /* メニューの大きさ */ 
+  --hamburger-menu-size: 60px; /* メニューの大きさ */ 
   --hamburger-menu-padding: 10px;  
   --hamburger-menu-border-px: 15px; /* 線の太さ */
   // --hamburger-menu-border-color: #043c78; /* 線の色 */
@@ -68,10 +68,10 @@
 }
 
 // headの写真スライド
-h2 .top{
+.toptitle, h2 .top{
   border:none;
-
 }
+
 #slideshow {
   position: relative;
   display:block;
@@ -97,9 +97,12 @@ h2 .top{
 
 .intro{
   margin-left:50px;
+
+  .img{
+  background-size:30px;
+  rotate: -75;
+  }
 }
-
-
 /* slider */
 .swiper-container{
   height: 500px;
