@@ -7,7 +7,7 @@ $(function(){
 
 
 
-// headの写真スライド
+// 上の写真スライド
 function slideSwitch() {
   var $active = $('#slideshow img.active');
 
