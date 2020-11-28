@@ -1,11 +1,9 @@
 @charset "UTF-8";
 * {
   color: #043c78;
+  font-family:游ゴシック体,YuGothicNoto Sans CJK JP, 02うつくし明朝体,02UtsukushiMincho;
 }
 
-* {
-  color: #043c78;
-}
 
 /* header */
 /* drawer */
@@ -127,19 +125,15 @@ nav {
 }
 // 上のスライドここまで
 
-
-article {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-article #intro {
-  margin-left: 50px;
-  background-size: 30px;
-  rotate: -75;
-}
+.name{
+  margin-bottom:30px;
+  font-weight: bolder;
+  }
+.lead{
+  width:100% !important;
+  padding:10px;
+  margin-bottom:50px;
+  }
 
 article #access {
   display: flex;
@@ -155,4 +149,9 @@ article #access {
 .swiper-slide img {
   height: 300px;
   width: 100%;
+  margin-bottom: 0px !important;
+}
+
+.swiper-pagination{
+  margin-top:10px;
 }

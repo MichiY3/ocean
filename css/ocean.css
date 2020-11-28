@@ -1,10 +1,7 @@
 @charset "UTF-8";
 * {
   color: #043c78;
-}
-
-* {
-  color: #043c78;
+  font-family: 游ゴシック体,YuGothicNoto Sans CJK JP, 02うつくし明朝体,02UtsukushiMincho;
 }
 
 /* header */
@@ -112,7 +109,7 @@ nav {
   z-index: 8;
   opacity: 0.0;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   box-shadow: inset 0 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -125,17 +122,15 @@ nav {
   z-index: 9;
 }
 
-article {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.name {
+  margin-bottom: 30px;
+  font-weight: bolder;
 }
 
-article #intro {
-  margin-left: 50px;
-  background-size: 30px;
-  rotate: -75;
+.lead {
+  width: 100% !important;
+  padding: 10px;
+  margin-bottom: 50px;
 }
 
 article #access {
@@ -152,4 +147,9 @@ article #access {
 .swiper-slide img {
   height: 300px;
   width: 100%;
+  margin-bottom: 0px !important;
+}
+
+.swiper-pagination {
+  margin-top: 10px;
 }
