@@ -93,13 +93,15 @@ nav {
 }
 
 #slideshow {
+  border: none;
   position: relative;
   display: block;
-  width: 100%;
+  width: 100vw;
   /* 画像の横幅に合わせて記述 */
-  height: 100vh;
+  height: 90vh;
   /* 画像の高さに合わせて記述 */
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 #slideshow img {
@@ -108,7 +110,7 @@ nav {
   left: 0;
   z-index: 8;
   opacity: 0.0;
-  width: 100%;
+  width: 100vw;
   height: 90vh;
   box-shadow: inset 0 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
@@ -152,4 +154,55 @@ article #access {
 
 .swiper-pagination {
   margin-top: 10px;
+}
+
+/*小型PC*/
+/*タブレット*/
+@media screen and (max-width: 960px) {
+  body {
+    min-width: 850px;
+  }
+  #slideshow {
+    width: 100vw;
+    /* 画像の横幅に合わせて記述 */
+    height: 65%;
+    /* 画像の高さに合わせて記述 */
+    margin-bottom: -35px;
+    margin-left: 20px;
+  }
+  #slideshow img {
+    width: 100vw;
+    height: 75%;
+  }
+}
+
+/*スマートフォン*/
+@media screen and (max-width: 480px) {
+  body {
+    min-width: 375px;
+    max-width: 480px;
+  }
+  .container-fluid {
+    width: 100vw;
+    margin: 0px;
+  }
+  #slideshow {
+    width: 100vw;
+    /* 画像の横幅に合わせて記述 */
+    height: 55%;
+    /* 画像の高さに合わせて記述 */
+    margin-bottom: -100px;
+  }
+  #slideshow img {
+    width: 100vw;
+    height: 60%;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .lead {
+    margin-top: 20px;
+    width: 70%;
+    font-size: 15px;
+  }
 }
