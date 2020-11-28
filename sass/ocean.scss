@@ -152,7 +152,7 @@ nav {
 .swiper-slide img {
   height: 300px;
   width: 100%;
-  margin-bottom: 0px !important;
+
 }
 
 .swiper-pagination{
@@ -193,6 +193,11 @@ nav {
     }
   }
 }
+.gMap iframe {
+  width:800px;
+  height:600px;
+
+}
 /*youtube*/
 .voice{
   text-align: center;
@@ -214,7 +219,7 @@ nav {
   iframe{
     width:500px;
     height:300px;
-    margin-right:-300px;
+ 
     margin-top:50px;
     margin-bottom: 100px;;
     }
@@ -258,7 +263,8 @@ nav {
     height: 65%;
     /* 画像の高さに合わせて記述 */
     margin-bottom:-35px;
-    margin-left:25px;
+    margin-left:20px;
+   
    & img {
     width: 100vw;
     height:75%;
@@ -272,7 +278,7 @@ nav {
   .swiper-slide img {
     height: 350px;
     width: 100%;
-    margin-bottom: 0px !important;
+   
       }
 
 /*アクセス*/
@@ -284,6 +290,7 @@ nav {
 
     table{
       margin-top:10px;
+      margin-left:20px;
       padding-bottom:3px;
       th{
         font-size: 25px;
@@ -292,12 +299,24 @@ nav {
     }
   }
   .gMap iframe{
-    width: 80vw; 
+    width: 80vw;
+    margin-left:20px;
   }
+
 /*yuotube*/
 
 #youtube{
   width:80%;
+  padding-top:50px;
+
+  img{
+    width:350px;
+  }
+  iframe{
+    width:400px;
+    height:270px;
+    margin-right:-100px;
+    }
 }
 
 }
@@ -314,6 +333,7 @@ nav {
     height: 55%;
     /* 画像の高さに合わせて記述 */
     margin-bottom:-100px;
+    margin-left:0px;
   
   
    & img {
@@ -330,21 +350,39 @@ nav {
     font-size:15px;
   }
   .swiper-container {
-    height: 500px;
+    height: 250px;
     width: 90%;
   }
 
   .swiper-slide img {
-    height: 300px;
+    height: 180px;
     width: 100%;
-    margin-bottom: 0px !important;
       }
   
+
+/*アクセス*/
+.gMap{
+  width:80%;
+  height:80%;
 }
 
-/*yuotube*/
-
+/*YouTube*/
 #youtube{
-  width:70%;
-}
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  img{
+    width:350px;
+  }
+  .CD p{
+    text-align:center;
+  }
+  iframe{
+    width:370px;
+    height:250px;
+    margin-right:10px;
+    }
+}
+}

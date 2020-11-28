@@ -148,7 +148,6 @@ nav {
 .swiper-slide img {
   height: 300px;
   width: 100%;
-  margin-bottom: 0px !important;
 }
 
 .swiper-pagination {
@@ -191,6 +190,11 @@ nav {
   padding-left: 30px;
 }
 
+.gMap iframe {
+  width: 800px;
+  height: 600px;
+}
+
 /*youtube*/
 .voice {
   text-align: center;
@@ -216,7 +220,6 @@ nav {
 #youtube iframe {
   width: 500px;
   height: 300px;
-  margin-right: -300px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -253,7 +256,7 @@ nav {
     height: 65%;
     /* 画像の高さに合わせて記述 */
     margin-bottom: -35px;
-    margin-left: 25px;
+    margin-left: 20px;
   }
   #slideshow img {
     width: 100vw;
@@ -266,7 +269,6 @@ nav {
   .swiper-slide img {
     height: 350px;
     width: 100%;
-    margin-bottom: 0px !important;
   }
   /*アクセス*/
   #mapBox {
@@ -276,6 +278,7 @@ nav {
   }
   #mapBox table {
     margin-top: 10px;
+    margin-left: 20px;
     padding-bottom: 3px;
   }
   #mapBox table th {
@@ -283,10 +286,20 @@ nav {
   }
   .gMap iframe {
     width: 80vw;
+    margin-left: 20px;
   }
   /*yuotube*/
   #youtube {
     width: 80%;
+    padding-top: 50px;
+  }
+  #youtube img {
+    width: 350px;
+  }
+  #youtube iframe {
+    width: 400px;
+    height: 270px;
+    margin-right: -100px;
   }
 }
 
@@ -302,6 +315,7 @@ nav {
     height: 55%;
     /* 画像の高さに合わせて記述 */
     margin-bottom: -100px;
+    margin-left: 0px;
   }
   #slideshow img {
     width: 100vw;
@@ -316,17 +330,34 @@ nav {
     font-size: 15px;
   }
   .swiper-container {
-    height: 500px;
+    height: 250px;
     width: 90%;
   }
   .swiper-slide img {
-    height: 300px;
+    height: 180px;
     width: 100%;
-    margin-bottom: 0px !important;
   }
-}
-
-/*yuotube*/
-#youtube {
-  width: 70%;
+  /*アクセス*/
+  .gMap {
+    width: 80%;
+    height: 80%;
+  }
+  /*YouTube*/
+  #youtube {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #youtube img {
+    width: 350px;
+  }
+  #youtube .CD p {
+    text-align: center;
+  }
+  #youtube iframe {
+    width: 370px;
+    height: 250px;
+    margin-right: 10px;
+  }
 }
