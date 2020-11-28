@@ -156,10 +156,15 @@ nav {
 }
 
 /* アクセス*/
+#access {
+  margin-bottom: 100px;
+}
+
 #title {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #title h2 {
@@ -186,8 +191,57 @@ nav {
   padding-left: 30px;
 }
 
+/*youtube*/
+.voice {
+  text-align: center;
+  margin: 0,10,0,10;
+}
+
+#youtube {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+#youtube .CD {
+  font-weight: bold;
+  align-items: center;
+}
+
+#youtube img {
+  width: 450px;
+}
+
+#youtube iframe {
+  width: 500px;
+  height: 300px;
+  margin-right: -300px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 /*レスポンシブ対応*/
 /*小型PC*/
+@media screen and (max-width: 1280px) {
+  /*アクセス*/
+  #mapBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mapBox table {
+    margin-top: 10px;
+    padding-bottom: 3px;
+  }
+  #mapBox table th {
+    font-size: 25px;
+  }
+  .gMap iframe {
+    width: 80vw;
+  }
+}
+
 /*タブレット*/
 @media screen and (max-width: 960px) {
   body {
@@ -230,6 +284,10 @@ nav {
   .gMap iframe {
     width: 80vw;
   }
+  /*yuotube*/
+  #youtube {
+    width: 80%;
+  }
 }
 
 /*スマートフォン*/
@@ -266,4 +324,9 @@ nav {
     width: 100%;
     margin-bottom: 0px !important;
   }
+}
+
+/*yuotube*/
+#youtube {
+  width: 70%;
 }
