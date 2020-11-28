@@ -2,6 +2,7 @@
 * {
   color: #043c78;
   font-family:游ゴシック体,YuGothicNoto Sans CJK JP, 02うつくし明朝体,02UtsukushiMincho;
+  background-color: #faf8f0;
 }
 
 
@@ -92,7 +93,7 @@ nav {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-
+/* 上のスライド */
 #slideshow {
   border: none;
   position:relative;
@@ -125,7 +126,7 @@ nav {
 #slideshow img.last-active {
   z-index: 9;
 }
-// 上のスライドここまで
+/*上のスライドここまで*/
 
 .name{
 
@@ -138,16 +139,15 @@ nav {
   margin-bottom:50px;
   }
 
-article #access {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 /* slider */
 .swiper-container {
-  height: 500px;
+  height: 400px;
   width: 75%;
+  margin-bottom:80px;
 }
+
 
 .swiper-slide img {
   height: 300px;
@@ -158,7 +158,38 @@ article #access {
 .swiper-pagination{
   margin-top:10px;
 }
-// レスポンシブ対応
+
+/* アクセス*/
+#title{
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+ 
+  h2{
+    font-size:bold;
+  }
+}
+#mapBox{
+  display: flex;
+  justify-content: space-around;
+  
+  table{
+    display: flex;
+    align-items: center;
+    
+    th{
+      font-size:27px;
+      padding:5px;
+      
+    }
+    td{
+      font-size:20px;
+      padding-left:30px;
+    }
+  }
+}
+
+/*レスポンシブ対応*/
 
 /*小型PC*/
 @media screen and (max-width: 1280px){}
@@ -174,12 +205,43 @@ article #access {
     height: 65%;
     /* 画像の高さに合わせて記述 */
     margin-bottom:-35px;
-    margin-left:20px;
+    margin-left:25px;
    & img {
     width: 100vw;
     height:75%;
     }
   }
+  .swiper-container {
+    height: 410px;
+    width: 90%;
+  }
+
+  .swiper-slide img {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 0px !important;
+      }
+/*アクセス*/
+
+  #mapBox{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    table{
+      margin-top:10px;
+      padding-bottom:3px;
+      th{
+        font-size: 25px;
+        
+      }
+    }
+  }
+  .gMap iframe{
+    width: 80vw;
+    
+  }
+
 }
 /*スマートフォン*/
 @media screen and (max-width: 480px){
@@ -187,10 +249,7 @@ article #access {
     min-width:375px;
     max-width:480px;
   }
-  .container-fluid{
-    width:100vw;
-    margin:0px;
-  }
+  
   #slideshow {
     width: 100vw;
     /* 画像の横幅に合わせて記述 */
@@ -209,8 +268,20 @@ article #access {
   }
   .lead{
     margin-top:20px;
-    width:70%;
+    width:65%;
     font-size:15px;
   }
+  .swiper-container {
+    height: 500px;
+    width: 90%;
+  }
+
+  .swiper-slide img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0px !important;
+      }
+  
 }
+
 

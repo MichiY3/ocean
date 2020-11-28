@@ -2,6 +2,7 @@
 * {
   color: #043c78;
   font-family: 游ゴシック体,YuGothicNoto Sans CJK JP, 02うつくし明朝体,02UtsukushiMincho;
+  background-color: #faf8f0;
 }
 
 /* header */
@@ -92,6 +93,7 @@ nav {
   -webkit-overflow-scrolling: touch;
 }
 
+/* 上のスライド */
 #slideshow {
   border: none;
   position: relative;
@@ -124,6 +126,7 @@ nav {
   z-index: 9;
 }
 
+/*上のスライドここまで*/
 .name {
   margin-bottom: 30px;
   font-weight: bolder;
@@ -135,15 +138,11 @@ nav {
   margin-bottom: 50px;
 }
 
-article #access {
-  display: flex;
-  justify-content: space-around;
-}
-
 /* slider */
 .swiper-container {
-  height: 500px;
+  height: 400px;
   width: 75%;
+  margin-bottom: 80px;
 }
 
 .swiper-slide img {
@@ -156,6 +155,38 @@ article #access {
   margin-top: 10px;
 }
 
+/* アクセス*/
+#title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#title h2 {
+  font-size: bold;
+}
+
+#mapBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+#mapBox table {
+  display: flex;
+  align-items: center;
+}
+
+#mapBox table th {
+  font-size: 27px;
+  padding: 5px;
+}
+
+#mapBox table td {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+/*レスポンシブ対応*/
 /*小型PC*/
 /*タブレット*/
 @media screen and (max-width: 960px) {
@@ -168,11 +199,36 @@ article #access {
     height: 65%;
     /* 画像の高さに合わせて記述 */
     margin-bottom: -35px;
-    margin-left: 20px;
+    margin-left: 25px;
   }
   #slideshow img {
     width: 100vw;
     height: 75%;
+  }
+  .swiper-container {
+    height: 410px;
+    width: 90%;
+  }
+  .swiper-slide img {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 0px !important;
+  }
+  /*アクセス*/
+  #mapBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mapBox table {
+    margin-top: 10px;
+    padding-bottom: 3px;
+  }
+  #mapBox table th {
+    font-size: 25px;
+  }
+  .gMap iframe {
+    width: 80vw;
   }
 }
 
@@ -181,10 +237,6 @@ article #access {
   body {
     min-width: 375px;
     max-width: 480px;
-  }
-  .container-fluid {
-    width: 100vw;
-    margin: 0px;
   }
   #slideshow {
     width: 100vw;
@@ -202,7 +254,16 @@ article #access {
   }
   .lead {
     margin-top: 20px;
-    width: 70%;
+    width: 65%;
     font-size: 15px;
+  }
+  .swiper-container {
+    height: 500px;
+    width: 90%;
+  }
+  .swiper-slide img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0px !important;
   }
 }
