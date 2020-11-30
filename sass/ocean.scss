@@ -44,13 +44,8 @@ nav {
  
 }
 
-.navbar_toggle_icon {
-  position: relative;
-  display: block;
-  height: 2px;
-  width: 30px;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+.hamberger_line.open span:nth-of-type(1) {
+  transform: translateY(12px) rotate(-45deg);
 }
 
 .navbar_toggle_icon:nth-child(1) {
@@ -59,59 +54,47 @@ nav {
   text-shadow: 1px 1px 3px #faf8f0
 }
 
-.navbar_toggle_icon:nth-child(2) {
-  margin: 8px 0;
-  background: #f32a07;
-  text-shadow: 1px 1px 3px #faf8f0
-}
-
-.navbar_toggle_icon:nth-child(3) {
-  top: 0;
-  background: #f0cb53;
-  text-shadow: 1px 1px 3px #faf8f0
-}
-
-/*OPEN時の動き*/
-.navbar_toggle.open .navbar_toggle_icon:nth-child(1) {
-  top: 10px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.navbar_toggle.open .navbar_toggle_icon:nth-child(2) {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+.hamberger_line.open span:nth-of-type(2) {
   opacity: 0;
 }
 
-.navbar_toggle.open .navbar_toggle_icon:nth-child(3) {
-  top: -10px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.hamberger_line span:nth-of-type(3) {
+  background: #f0cb53;
+  bottom: 0;
 }
 
-.menu {
-
-  -webkit-transform: translateX(20%);
-  transform: translateX(20%);
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
-  z-index: 1000;
+.hamberger_line.open span:nth-of-type(3) {
+  transform: translateY(-12px) rotate(45deg);
 }
 
-.menu ul li {
-  padding: 2em;
-  border-bottom: 1px solid #CCC;
-  background: rgba(255,255,255,0.6);
+.hamberger_list {
+  width: 250px;
+  height: 100%;
+  padding-top: 100px;
+  background-color: rgb(16, 69, 153,);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transform: translateX(250px);
+  transition: all .5s;
 }
 
-/*OPEN時の動き*/
-.menu.open {
-  -webkit-transform: translateX(0);
+.hamberger_list.open {
   transform: translateX(0);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
+
+.hamberger_list li {
+  text-align: center;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.hamberger_list a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* 上のスライド */
 #slideshow {
   border: none;
@@ -256,6 +239,10 @@ nav {
   justify-content:center;
   margin-right: 5px;
 }
+
+// #google-plus {
+//   padding-left: 5px;
+// }
 
 .copyright {
   display:flex;

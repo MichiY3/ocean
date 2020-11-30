@@ -20,28 +20,27 @@
 </head>
 <body>
     <header>
-      <div class="box">  
-        <!-- hamburger -->      
-      <nav>
-        <div class="hamburger">
-         <div class="navbar_toggle">
-          <span class="navbar_toggle_icon"></span>
-          <span class="navbar_toggle_icon"></span>
-          <span class="navbar_toggle_icon"></span>
-         </div>
+      <!-- hamburger -->
+        <!-- <div class="container"> -->
+          <div class="hamberger_menu">
+            <!-- 三本線 -->
+            <div class="hamberger_line">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- クリックしたときのメニュー -->
+            <nav class="hamberger_list">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">cafe OCEAN</a></li>
+                  <li><a href="#title">店情報</a></li>
+                  <li><a href="#voice">イベント情報</a></li>
+                  <li><a href="#hireme">お問い合わせ</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!-- drawer -->
-        <div class="menu">
-         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">access</a></li>
-         </ul>
-        </div>
-       </nav>
-   
     
     <!-- <head_slide>   -->
       <div class="container-fluid">
@@ -62,7 +61,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col col-md-10 text-center">
-            <h1 class="name">cafe OCEAN</h1>
+            <h1 class="name" id="about">cafe OCEAN</h1>
             <p class="lead"> 嘉手納基地の真ん前、その名も「ゲート通り」にある ビールのおいしいタコス屋さん<br>
               お昼頃から営業中<br>
               時々ギターも弾いてみたり<br></p>
@@ -145,7 +144,7 @@
     
    
       <!-- video -->
-      <h2 class="voice">Ocean's Voice </h2>
+      <h2 class="voice" id="voice">Ocean's Voice </h2>
       <div id="youtube">
         <div class="CD">
           <p>Over the Ocean 絶賛発売中</p>
