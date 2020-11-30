@@ -21,7 +21,7 @@
 nav {
   position: relative;
   width: 15%;
-  height: 70px;
+  height: 60px;
   background: #c0c0c0;
 }
 
@@ -33,6 +33,7 @@ nav {
   position: relative;
   height: 70px;
   padding: 0 1em;
+  margin-left: 50px;
 }
 
 .navbar_toggle {

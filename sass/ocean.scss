@@ -23,7 +23,7 @@ nav {
   position: relative;
 
   width: 15%;
-  height: 70px;
+  height: 60px;
   background: #c0c0c0;
 }
 
@@ -35,11 +35,13 @@ nav {
   position: relative;
   height: 70px;
   padding: 0 1em;
+  margin-left:50px;
   
 }
 
 .navbar_toggle {
   z-index: 9999;
+ 
 }
 
 .navbar_toggle_icon {
@@ -55,7 +57,6 @@ nav {
   top: 0;
   background: #f0cb53;
   text-shadow: 1px 1px 3px #faf8f0
-  
 }
 
 .navbar_toggle_icon:nth-child(2) {
