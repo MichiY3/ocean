@@ -1,18 +1,11 @@
-//hamburger 
-$(function () {
-  // クリック時の動作
-  $('.hamberger_line').on('click', function() {
-      // メニューを閉じる
-      if($(this).hasClass('open')) {
-          $(this).removeClass('open');
-          $('.hamberger_list').removeClass('open');
-      // メニューを開く
-      } else {
-          $(this).addClass('open');
-          $('.hamberger_list').addClass('open');
-      }
+
+
+$(function() {
+  $('.drbtn2').on('click', function () {
+   $(this).toggleClass('action');
+   $('.drawer2').toggleClass('action');
   });
-}); 
+ });
 
 
 
@@ -37,4 +30,17 @@ function slideSwitch() {
 $(function() {
   setInterval( "slideSwitch()", 3500 );
 });
+
+
+var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  slidesPerView: 2,
+    spaceBetween: 10,
+    centeredSlides : true,
+  pagination: '.swiper-pagination',
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev'
+});
+
+
 
