@@ -38,7 +38,7 @@
 	top:0;
 	right:0;
 	width: 300px;
-    height: 70%;
+  height: 90vh;
     color: #192f60;
 	background: rgba(255,255,255, 0.7);
 	padding: 50px 10px;
@@ -215,6 +215,7 @@
   height: 400px;
   width: 75%;
   margin-bottom: 80px;
+  color: #043c78;
 }
 
 .swiper-slide img {
@@ -222,8 +223,9 @@
   width: 100%;
 }
 
-.swiper-pagination {
+.swiper-pagination{
   margin-top: 10px;
+  
 }
 
 /* アクセス*/
@@ -296,12 +298,56 @@
   margin-bottom: 100px;
 }
 
-/* .col-md-8 a {
-  color: #faf8f0;
-  background-color: #043c78;
+
+/* news & contact START */
+#container{
+  display:flex;
+  justify-content: space-between;
+  padding-right:50px;
+  padding-left:50px;
+  margin-top:50px;
+}
+.h2_title{
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom:50px;
+}
+.news{ 
+  width:50%;
+  padding-right:30px;
+  padding-left:30px;
+}
+.each_post{
+  margin-top:70px;
+}
+.each_post ul li { 
+  display: flex;
+  justify-content: flex-start;
+  text-align:left;
+}
+.each_post li img{
+  width:120px;
+  height:80px;
+  margin-bottom:20px;
+  margin-right:30px;
+  margin-top:-10px;
+}
+/* .each_post ul li p{
+ flex-wrap:wrap
 } */
+
+.contact{
+  width:50%;
+  padding-right:30px;
+  padding-left:30px;
+}
+
+
+/* news & contact END */
+
+
 .col-12 .col-md-8{
-    width:80%;
+    width:100%;
 }
 .row .mt-4 .btn .btn-primary{
     color:#043c78;
@@ -313,10 +359,21 @@
   margin-right: 5px;
 }
 
+.btn.btn-large {
+  width:80px;
+  height:40px;
+  color:white;
+  font-size:15px;
+  font-weight: bold;
+  background-color: #043c78;
+  border-radius: 5px;;
+}
 .copyright {
   display: flex;
   justify-content: center;
 }
+
+
 
 /*レスポンシブ対応*/
 /*小型PC*/
