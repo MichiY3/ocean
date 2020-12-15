@@ -38,9 +38,9 @@
 	top:0;
 	right:0;
 	width: 300px;
-    height: 50%;
+    height: 70%;
     color: #192f60;
-	background: rgba(255,255,255, 0.5);
+	background: rgba(255,255,255, 0.7);
 	padding: 50px 10px;
 	transform: translate(300px);/*right:0 から右に300px寄ってる*/
 	transform: translate(300px);
@@ -49,7 +49,10 @@
 	z-index:9999;
   }
 .drawer2 li{
-    color:#202f55;
+    color:#417038;
+    font-family: 游ゴシック体;
+    font-size:18px;
+    font-weight: bold;
     margin-bottom:15px;
 }
   /* ドロワーメニューの開閉ボタン */
@@ -59,7 +62,7 @@
 	right:300px;/*右から３００px  = left:-50px; */
 	width: 70px;
 	height: 70px;
-	-webkit-transition:ease .5s;
+	transition:ease .5s;
 	transition:ease .5s;
 	cursor:pointer;
 	align-items: flex-end;
@@ -68,10 +71,10 @@
 	font-size: 10px;
 	padding: 3px;
     z-index: 10000;
-    background-color:rgba(255,255,255, .5);
+    background-color:rgba(255,255,255, .7);
   }
   .drbtn2 span{
-    color:#00947a;
+    color:#417038;
     font-weight: bold;
     font-size: 15px;
     text-shadow:2px 0px 1px white;
@@ -96,12 +99,13 @@
 
   .drbtn2.action {
       right:0;
+      background-color:rgba(255,255,255, .0);
     }
    
 /* ハンバーガーボタンを作るスタイルシート */
 .hambarg {
     position: absolute;
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     height: 7px;
     width: 45px;
@@ -112,17 +116,17 @@
   .hambarg:nth-child(1) {
       top: 20%;
       left: 50%;
-      background-color:#fac559;
+      background-color:#deb068;
   }
   .hambarg:nth-child(2) {
       top: 40%;
       left: 50%;
-      background-color:#ea5549;
+      background-color:#d3381c;
   }
   .hambarg:nth-child(3) {
       top: 60%;
       left: 50%;
-      background-color:#fac559;
+      background-color:#deb068;
   }
 /* ハンバーガーボタンを"×"に変える */
 .drbtn.action .hambarg:nth-child(1) {
@@ -298,6 +302,9 @@
 } */
 .col-12 .col-md-8{
     width:80%;
+}
+.row .mt-4 .btn .btn-primary{
+    color:#043c78;
 }
 .footer-share {
   font-size: 1.3em;
