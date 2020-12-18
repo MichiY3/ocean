@@ -2,7 +2,7 @@
 ### URL
 http://travel100.parallel.jp/wp/
 
-#### アウトプット
+#### アウトプット部分
 - HTML CSS SASS
 - swiper 最初のスライド
 - ハンバーガー（タコス）バーとドロワー
