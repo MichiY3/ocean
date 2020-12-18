@@ -34,19 +34,19 @@
 
 /* drawer  CLOSE*/
 .drawer2 {
-	position:fixed;
-	top:0;
-	right:0;
-	width: 300px;
+  position:fixed;
+  top:0;
+  right:0;
+  width: 300px;
   height: 90vh;
     color: #192f60;
-	background: rgba(255,255,255, 0.7);
-	padding: 50px 10px;
-	transform: translate(300px);/*right:0 から右に300px寄ってる*/
-	transform: translate(300px);
-	transition:ease .5s;
-	transition:ease .5s;
-	z-index:9999;
+  background: rgba(255,255,255, 0.7);
+  padding: 50px 10px;
+  transform: translate(300px);/*right:0 から右に300px寄ってる*/
+  transform: translate(300px);
+  transition:ease .5s;
+  transition:ease .5s;
+  z-index:9999;
   }
 .drawer2 li{
     color:#417038;
@@ -57,21 +57,22 @@
 }
   /* ドロワーメニューの開閉ボタン */
   .drbtn2 {
-	position: fixed;
-	top:0;
-	right:300px;/*右から３００px  = left:-50px; */
-	width: 70px;
-	height: 70px;
-	transition:ease .5s;
-	transition:ease .5s;
-	cursor:pointer;
-	align-items: flex-end;
-	display: flex;
-	justify-content: center;
-	font-size: 10px;
-	padding: 3px;
+  position: fixed;
+  top:0;
+  right:300px;/*右から３００px  = left:-50px; */
+  width: 70px;
+  height: 70px;
+  transition:ease .5s;
+  transition:ease .5s;
+  cursor:pointer;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  padding: 3px;
     z-index: 10000;
     background-color:rgba(255,255,255, .7);
+    margin-bottom: 5px;
   }
   .drbtn2 span{
     color:#417038;
@@ -80,10 +81,10 @@
     text-shadow:2px 0px 1px white;
   }
   .drawer2.action {
-	transform:translate(0);
-	transform:translate(0);
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
+  transform:translate(0);
+  transform:translate(0);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   }
    
   /* ドロワーメニューをOPENにするスタイルシート */
@@ -352,12 +353,15 @@
 }
 .each_post{
   margin-top:70px;
+  margin-left:30px;
 }
+
 .each_post ul li { 
   display: flex;
-  justify-content: flex-start;
+  justify-content:flex-start;
   text-align:left;
   margin-bottom:10px;
+
 }
 .each_post li img{
   width:170px;
@@ -425,9 +429,59 @@ footer hr{
 
 
 
+/***** START single php for blog and news */
+
+.single_title{
+  margin-left:45px;
+}
+.single_time{
+  margin-right:45px;
+}
+.post_main{
+  display:flex;
+  justify-content: start;
+  padding-right:200px;
+}
+.post_main .post_thumbnail{
+  width:20%;
+  padding-left:50px;
+  margin-right:50px;
+}
+.post-content{
+  width:60%;
+  height:auto;
+  padding-top:20px;
+  margin-left:100px;
+  font-size:20px;
+}
+#post-content img{
+  width:60vw;
+  height:auto;
+}
+
+.back_btn{
+  margin-left:470px;
+  width:169px;
+}
+/* single php for blog and news *****END*/
+
 /*レスポンシブ対応*/
 /*小型PC*/
 @media screen and (max-width: 1280px) {
+  body {
+
+  }
+  #slideshow {
+    /* width: 100vw;  */
+    /* height: 10%; */
+    margin-bottom: -35px;
+    /* margin-left: 20px;  */
+  }
+  #slideshow img {
+    /* width: 100vw; */
+    height: 75%;
+  }
+
   /*アクセス*/
   #mapBox {
     display: flex;
@@ -447,20 +501,18 @@ footer hr{
 }
 
 /*タブレット*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   body {
-    min-width: 850px;
+    min-width: 480px;
   }
   #slideshow {
-    width: 100vw;
-    /* 画像の横幅に合わせて記述 */
-    height: 65%;
-    /* 画像の高さに合わせて記述 */
+    /* width: 100vw;  */
+    /* height: 10%; */
     margin-bottom: -35px;
-    margin-left: 20px;
+    /* margin-left: 20px;  */
   }
   #slideshow img {
-    width: 100vw;
+    /* width: 100vw; */
     height: 75%;
   }
   .swiper-container {
@@ -502,8 +554,20 @@ footer hr{
     height: 270px;
     margin-right: -100px;
   }
-}
 
+.post_main{
+  margin-top:50px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:20px;
+}
+.post_content{
+  display:flex;
+  justify-content: flex-start;
+  width:300px;
+}
+}
 /*スマートフォン*/
 @media screen and (max-width: 480px) {
   body {
@@ -511,17 +575,17 @@ footer hr{
     max-width: 480px;
   }
   #slideshow {
-    width: 100vw;
+    /* width: 100vw; */
     /* 画像の横幅に合わせて記述 */
-    height: 55%;
+    /* height: 10%; */
     /* 画像の高さに合わせて記述 */
-    margin-bottom: -100px;
+    margin-bottom: -300px;
     margin-left: 0px;
   }
   #slideshow img {
     width: 100vw;
-    height: 60%;
-  }
+    height: 50%;
+  } 
   .name {
     font-weight: bold;
   }
@@ -612,36 +676,11 @@ footer hr{
     width:100vw;
     height:auto;
   }
-
+  .back.btn{
+    margin-left:270px;
+  }
 }
 
 
 
-copy/* news & contact START */
-
-
-/* .each_post{
-  margin-top:70px;
-}
-.each_post ul li { 
-  display: flex;
-  justify-content: flex-start;
-  text-align:left;
-}
-.each_post li img{
-  width:120px;
-  height:80px;
-  margin-bottom:20px;
-  margin-right:30px;
-  margin-top:-10px;
-}
-
-.contact{
-  width:100%;
-  padding-right:30px;
-  padding-left:30px;
-} */
-
-
-copy/* news & contact END */
 
