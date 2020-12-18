@@ -10,7 +10,7 @@ http://travel100.parallel.jp/wp/
 #### 授業からのアウトプット部分
 - HTML CSS SASS
 - swiper 最初のスライド
-- ハンバーガー（タコス）バーとドロワー
+- ハンバーガーバーとドロワー
 - Bootstrap お問い合わせのところ
 - JS （ブログリンク先の戻るボタン）
 - WordPress　テーマ化
